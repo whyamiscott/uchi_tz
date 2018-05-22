@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>UCHi.RU</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main__content">
+            <div class="exercise">
+                <span class="exercise__symbol" id="a"></span> <span class="exercise__symbol">+</span> <span class="exercise__symbol" id="b"></span> = <span class="exercise__symbol" id="answer-placeholder">?</span><input type="text" class="exercise__input" id="answer" size="2" style="display: none">
+            </div>
+        
+            <div class="ruler-container" id="ruler-container">
+                <div class="ruler" id="ruler">
+                    <svg class="arrow" class="arrow" id="first-arrow">
+                        <path d="" fill="none" stroke="none" class="main-line"/>
+                        <path d="" fill="none" stroke="none" class="top-line"/>
+                        <path d="" fill="none" stroke="none" class="bottom-line"/>
+                    </svg>
+                    <svg class="arrow" class="arrow" id="second-arrow">
+                        <path d="" fill="none" stroke="none" class="main-line"/>
+                        <path d="" fill="none" stroke="none" class="top-line"/>
+                        <path d="" fill="none" stroke="none" class="bottom-line"/>
+                    </svg>
+        
+                    <input type="text" class="arrow-input" id="input-a">
+                    <input type="text" class="arrow-input" id="input-b">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

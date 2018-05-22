@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    padding: 0;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', Droid Sans, 'Helvetica Neue', sans-serif;
+    line-height: 1;
+}
+
+input {
+    font: inherit;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ruler-container {
+    margin: 3em auto 0 auto;
+    background-position: left bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.ruler {
+    height: 100%;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+}
+
+.exercise {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.exercise__symbol,
+.exercise__input {
+    line-height: 1.5;
+}
+
+.exercise__symbol {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 1px 0;
+}
+
+.exercise__input {
+    font-size: 1em;
+    width: 2.5em;
+    padding: 0 0.25em;
+    display: inline-block;
+    vertical-align: baseline;
+    line-height: 1.5;
+    border: 1px solid #222;
+    outline: none;
+}
+
+.arrow-input {
+    font-size: 1.25em;
+    display: block;
+    width: 2.5em;
+    padding: 0 0.5em;
+    position: absolute;
+    display: none;
+    text-align: center;
+    outline: none;
+}
+
+.exercise__input,
+.arrow-input {
+    border: 1px solid #222;
+}
+
+.exercise__input--error,
+.arrow-input--error {
+    border-color: red;
+}
+
+.arrow-input--success {
+    border-color: transparent;
+    background: transparent;
+}
